@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PeopleManager.Data\PeopleManager.Data.csproj" />
+    <ProjectReference Include="..\PeopleManager.Model\PeopleManager.Model.csproj" />
+    <ProjectReference Include="..\PeopleManager.Services.Model\PeopleManager.Services.Model.csproj" />
+    <ProjectReference Include="..\Vives.Services.Model\Vives.Services.Model.csproj" />
+  </ItemGroup>
+
+</Project>

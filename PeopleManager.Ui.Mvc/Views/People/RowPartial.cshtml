@@ -1,0 +1,11 @@
+﻿@model PersonResult
+
+<tr>
+	<td>@Model.FirstName</td>
+	<td>@Model.LastName</td>
+	<td><a href="mailto:@Model.Email">@Model.Email</a></td>
+	<td>
+		<a class="btn btn-light" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+		<a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+	</td>
+</tr>

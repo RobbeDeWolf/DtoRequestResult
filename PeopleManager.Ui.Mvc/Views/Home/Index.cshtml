@@ -1,0 +1,20 @@
+﻿@model IList<PersonResult>
+@{
+    ViewData["Title"] = "People Manager";
+}
+
+@if (Model.Any())
+{
+	var employeOfTheMonth = Model.First();
+	<h2>Employee of the Month!</h2>
+	<partial name="PersonCardPartial" model="employeOfTheMonth"/>
+}
+
+<div class="row">
+    @foreach (var person in Model)
+    {
+	    <div class="col-3">
+            <partial name="PersonCardPartial" model="person"/>
+	    </div>
+    }
+</div>
